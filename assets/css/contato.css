@@ -1,0 +1,62 @@
+#formulario {
+    width: 400px;
+    height: 100%;
+    background-color: rgba(164, 199, 146, 0.84);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    resize: none;
+    border: 2px groove rgb(192, 192, 192);  
+}
+
+fieldset {
+    border: none;
+}
+
+#formulario input[type="text"],
+#formulario input[type="email"],
+#formulario input[type="tel"],
+#formulario select,
+#formulario textarea {
+    width: 50%;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid rgb(192, 192, 192);
+    border-radius: 5px;
+}
+
+.check-group{
+    display: block;
+    align-items:center;  
+}
+
+.check-group, .label-check {
+    margin: 10px;
+}
+
+#formulario input[type="checkbox"] {
+    margin-top: 10px;
+}
+
+button, .swal-button {
+    background-color: #49c44f !important;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#formulario button:hover, .swal-button:hover  {
+    background-color:#4CAF50 !important;
+}
+
+.swal-text {
+    text-align: center !important;
+    padding: 0 40px !important;
+}
+
+#formulario textarea {
+    width: 84%;
+    resize: none;
+}

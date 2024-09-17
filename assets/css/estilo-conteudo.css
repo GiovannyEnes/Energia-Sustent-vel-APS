@@ -1,0 +1,134 @@
+.main-article {
+    display: block;
+    min-height: 90vh;
+    max-width: 85%;
+    min-width: 40%;
+    background-color: rgba(255, 255, 255, 0.681);
+    padding: 30px 50px 30px 50px;
+    margin: 150px auto 25px auto;
+    height: 100%;
+    width: 100%;
+    color: #000000;
+}
+
+figure, .legenda {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+figure img.imagens-energias {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+h1{
+    text-align: center;
+}
+
+h1 {
+    padding-bottom: 30px;
+}
+
+.legenda {
+    font-size: 18px;
+}
+
+hr {
+    margin-top: 25px;
+	border-top: 1px solid #000000;
+}
+
+h2, h3 {
+    text-align:left;
+    padding: 15px 0 0 0;
+}
+
+p, .legenda {
+    padding: 1% 0;
+    text-indent: 3ch;
+}
+
+li {
+    padding: 1% 0;
+}
+
+p, li {
+    font-size: 20px;
+    text-align: justify;
+}
+
+ul, ol {
+    padding-left: 3%;
+}
+
+.pesquisa-imagem {
+    margin: auto;
+    display: block;
+    padding: 10px;
+    height: 50%;
+    width: 50%;
+}
+
+table, td, th {
+    margin: 0 auto;
+    padding: 4px;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid black;
+    background-color: rgba(46, 88, 129, 0);
+}
+
+/*Botões de voltar e próximo*/
+.link-proximo, .link-voltar, .legenda-proximo, .legenda-proximo-energia-geotermica,.img-proximo {
+    position:fixed;
+    margin: 0;
+    padding: 0;
+}
+
+.link-proximo, .legenda-proximo, .legenda-proximo-energia-geotermica {
+    transform: translate(-50%,-50%);
+}
+
+.legenda-proximo, .legenda-proximo-energia-geotermica {
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    text-indent: 0;
+}
+
+.img-voltar {
+    height: 50px;
+    width: 50px;
+}
+
+.link-voltar {
+    top: 200px;
+    left: 45px;
+}
+
+/*Botão próximo*/
+.img-proximo {
+    height: 50px;
+    width: 50px;
+}
+
+.link-proximo {
+    rotate: 180deg;
+    top: 85.8%;
+    left: 97.8%;
+}
+
+.legenda-proximo {
+    top: 88.5%;
+    left: 96.4%;
+}
+
+/*Legenda da página energia.geotermica.html*/
+.legenda-proximo-energia-geotermica {
+    top: 91.5%;
+    left: 96.45%;
+}

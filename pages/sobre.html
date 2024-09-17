@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/sobre.css" />
+    <script type="module" src="../assets/js/lib.js" defer></script>
+    <link rel="icon" href="../assets/img/icon.png" type="image/png" />
+    <title>Sobre</title>
+  </head>
+  <body>
+    <header-component></header-component>
+    <main class="main">
+      <h1>Desenvolvedores</h1>
+      <br />
+      <div class="main-content">
+        <div class="box">
+          <div class="box-content">
+            <img
+              src="../assets/img/giovanny.jpg"
+              alt="foto de perfil"
+              class="profile-img"
+            />
+            <h2>Giovanny Enes</h2>
+            <div class="box-content--icons">
+              <a href="https://github.com/GiovannyEnes" target="_blank"
+                ><img
+                  src="../assets/img/github.svg"
+                  alt="Instagram"
+                  class="box-content--icon"
+              /></a>
+              <a
+                href="https://www.linkedin.com/in/giovanny-enes/"
+                target="_blank"
+                ><img
+                  src="../assets/img/linkedin.svg"
+                  alt="Facebook"
+                  class="box-content--icon"
+              /></a>
+              <p>
+                <br />Um pequeno gafanhoto na área de DEV porém com grandes
+                ambições. <br />
+                <br />Em breve um garoto de programa.<br />
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-content">
+            <img
+              src="../assets/img/joana.jpg"
+              alt="foto de perfil"
+              class="profile-img"
+            />
+            <h2>Joana Ferreira</h2>
+            <div class="box-content--icons">
+              <a href="https://github.com/xoanaf" target="_blank"
+                ><img
+                  src="../assets/img/github.svg"
+                  alt="Instagram"
+                  class="box-content--icon"
+              /></a>
+              <a
+                href="https://www.linkedin.com/in/joanaferreiral"
+                target="_blank"
+                ><img
+                  src="../assets/img/linkedin.svg"
+                  alt="Facebook"
+                  class="box-content--icon"
+              /></a>
+              <p id="bio">
+                <br />Experiência na área de infraestrutura e suporte a usuário.
+                <br />
+                <br />Completamente nova no universo da programação e
+                desenvolvimento WEB. <br />
+                <br />Pretendo ingressar na área DevOps. Além de ter interesse
+                em Análise de Dados e Cloud.<br />
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-content">
+            <img
+              src="../assets/img/lauan.png"
+              alt="foto de perfil"
+              class="profile-img"
+            />
+            <h2>Lauan Amorim</h2>
+            <div class="box-content--icons">
+              <a href="https://www.github.com/lauanamorim" target="_blank"
+                ><img
+                  src="../assets/img/github.svg"
+                  alt="Instagram"
+                  class="box-content--icon"
+              /></a>
+              <a href="https://www.linkedin.com/in/lauanamorim" target="_blank"
+                ><img
+                  src="../assets/img/linkedin.svg"
+                  alt="Facebook"
+                  class="box-content--icon"
+              /></a>
+              <p>
+                <br />Desenvolvedor Back-end, estudante de ciência da
+                computação, tenho interesse em análise de dados e
+                infraestrutura.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-content">
+            <img
+              src="../assets/img/miguel.jpg"
+              alt="foto de perfil"
+              class="profile-img"
+            />
+            <h2>Miguel Teixeira</h2>
+            <div class="box-content--icons">
+              <a
+                href="https://www.github.com/miguelsilvateixeira"
+                target="_blank"
+                ><img
+                  src="../assets/img/github.svg"
+                  alt="Instagram"
+                  class="box-content--icon"
+              /></a>
+              <a
+                href="https://www.linkedin.com/in/miguelsilvateixeira"
+                target="_blank"
+                ><img
+                  src="../assets/img/linkedin.svg"
+                  alt="Facebook"
+                  class="box-content--icon"
+              /></a>
+              <p>
+                <br />Desenvolvedor<br />Full Stack <br /><br />Sou um estudante
+                de TI, que gosta de filmes, livros, jogos e séries.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer-component></footer-component>
+    <script>
+      var bio = document.getElementById("bio");
+      var bioText = bio.innerHTML;
+
+      if (bioText.length >= 135) {
+        bio.innerHTML =
+          bioText.substring(0, 135) +
+          '... <span id="readMore" onclick="showMore()" style="color: blue; cursor: pointer;"> Ler mais</span>';
+      }
+
+      function showMore() {
+        bio.innerHTML =
+          bioText +
+          ' <span id="readLess" onclick="showLess()" style="color: blue; cursor: pointer;"> Ler menos</span>';
+      }
+
+      function showLess() {
+        bio.innerHTML =
+          bioText.substring(0, 135) +
+          '... <span id="readMore" onclick="showMore()" style="color: blue; cursor: pointer;"> Ler mais</span>';
+      }
+    </script>
+  </body>
+</html>
